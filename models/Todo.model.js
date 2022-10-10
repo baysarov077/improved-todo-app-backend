@@ -5,7 +5,8 @@ const todoSchema = mongoose.Schema({
   completed: {
     default: false,
     type: Boolean
-  }
+  },
+  date: String,
 })
 
 const Todo = mongoose.model("Todo", todoSchema)

@@ -13,6 +13,7 @@ module.exports.todosController = {
     try {
       const todos = await Todo.create({
         text: req.body.text,
+        date: new Date()
       });
       res.json(todos);
     } catch (error) {
